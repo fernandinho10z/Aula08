@@ -1,0 +1,13 @@
+# dentro do banco mercado
+# criar uma tabela chamada produtos
+# criar uma coluna chamada id (integer primary key not null auto_increment)
+# criar uma coluna chamada nome( varchar(255) )
+# criar uma coluna chamada quantidade ( varchar(255) )
+# criar uma coluna chamada valor ( varchar(255) )
+
+#adicionar os seguintes produtos na tabela:
+1 - Bacon - 50 unidades - 10,00
+2 - Pizza - 10 unidades - 15,00
+3 - Lasanha - 100 unidades - 29,99
+
+
