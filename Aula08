@@ -1,0 +1,84 @@
+import os 
+'''
+#verifica o login que esta logado
+print (os.getlogin())
+
+# verifica os arquivos na pasta
+print (os.listdir('/home/developer/4520-Python/HandsOn/Aula08'))
+
+#mostrando os arquivos em lista
+lista = os.listdir('/home/developer/4520-Python/HandsOn/Aula08')
+
+for diretorio in lista:
+    print (diretorio)
+
+
+print (os.rename('banana.py', 'abacaxi.py'))
+
+#executa os comandos direto do sistema
+print (os.system ('ls -la'))
+
+import sys 
+
+#qual sistema esta executando 
+print (sys.platform)
+
+print (sys.builtin_module_names)
+
+# sys.argv 
+print ('O comando ls -la esta snedo executado %s' %sys.argv)
+
+for ip in sys.argv[1::]:
+    print ('O comando ls -la esta sendo executado %s' %ip)
+    sys.exit()
+
+from datetime import datetime
+
+#print(datetime.datetime.now())
+
+print (datetime.now())
+
+import datetime 
+
+print (datetime.datetime.now())
+
+print (datetime.timedelta(10) + datetime.datetime.now())
+
+#voce mesmo define uma data
+print (datetime.time(14,0,0))
+print (datetime.date(2015,3,30))]
+
+
+#JSON
+
+import json
+
+dicionario = {'nome':'fernando', 'idade':24}
+
+#transforma o json em string
+print (json.dumps(dicionario))
+print (type(json.dumps(dicionario)))
+
+#trasnforma o json em dict
+
+string = '{"nome":"fernando", "idade":24}'
+print (json.loads(string))
+print(type(json.loads(string)))
+print (json.loads(string))
+'''
+
+#CSV
+
+import csv
+'''
+#csv.writer salva a informacao no arquivo
+with open ('teste.csv', 'w', newline='') as f:
+    arquivo = csv.writer(f,delimiter=';')
+    arquivo.writerow(['Fernando','teste','123'])
+
+#retorna as informacoes do arquivo
+with open ('teste.csv') as f:
+    arquivo = csv.reader(f, delimiter=';')
+    for item in arquivo:
+        print (item)
+'''
